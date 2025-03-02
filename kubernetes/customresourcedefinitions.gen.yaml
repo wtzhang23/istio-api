@@ -6620,6 +6620,12 @@ spec:
                       description: Set of TLS related options that govern the server's
                         behavior.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string
@@ -6853,6 +6859,12 @@ spec:
                       description: Set of TLS related options that govern the server's
                         behavior.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string
@@ -7086,6 +7098,12 @@ spec:
                       description: Set of TLS related options that govern the server's
                         behavior.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string
@@ -8675,6 +8693,12 @@ spec:
                         termination on the sidecar for requests originating from outside
                         the mesh.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string
@@ -9217,6 +9241,12 @@ spec:
                         termination on the sidecar for requests originating from outside
                         the mesh.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string
@@ -9759,6 +9789,12 @@ spec:
                         termination on the sidecar for requests originating from outside
                         the mesh.
                       properties:
+                        alpns:
+                          description: 'Optional: If specified, overrides the default
+                            ALPN list.'
+                          items:
+                            type: string
+                          type: array
                         caCertificates:
                           description: REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.
                           type: string

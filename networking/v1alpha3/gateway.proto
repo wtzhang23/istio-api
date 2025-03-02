@@ -539,4 +539,11 @@ message ServerTLSSettings {
   // * `AES256-SHA`
   // * `DES-CBC3-SHA`
   repeated string cipher_suites = 9;
+
+  // Optional: If specified, overrides the default ALPN list.
+  // This is typically used to only allow clients to negotiate
+  // a specific protocol (e.g. http/1.1 instead of both http/1.1 and h2).
+  // This field is only applicable when TLSMode is set to SIMPLE, MUTUAL,
+  // or OPTIONAL_MUTUAL.
+  repeated string alpns = 14;
 }

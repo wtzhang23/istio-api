@@ -590,6 +590,19 @@ The supported list of ciphers are:</p>
 
 </td>
 </tr>
+<tr id="ServerTLSSettings-alpns">
+<td><div class="field"><div class="name"><code><a href="#ServerTLSSettings-alpns">alpns</a></code></div>
+<div class="type">string[]</div>
+</div></td>
+<td>
+<p>If specified, overrides the default ALPN list.
+This is typically used to only allow clients to negotiate
+a specific protocol (e.g. http/1.1 instead of both http/1.1 and h2).
+This field is only applicable when TLSMode is set to SIMPLE, MUTUAL,
+or OPTIONAL_MUTUAL.</p>
+
+</td>
+</tr>
 </tbody>
 </table>
 </section>
